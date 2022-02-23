@@ -116,7 +116,9 @@ body {
   text-transform: uppercase;
   color: #e20e0d;
 }
-.events .title h2 {
+.events .title h2,
+.events .title h4,
+.events .title h5 {
   font-weight: bold;
 }
 .events .date h1 {
@@ -217,8 +219,12 @@ body {
 #about-uapa h2 {
   font-weight: bold;
 }
+.what-we-do {
+  background-color: #efefef;
+}
 .what-we-do .nav-tabs {
   border-bottom: 5px solid #dee2e6;
+  display: inline;
 }
 .what-we-do .nav-link {
   color: #000;
@@ -231,9 +237,22 @@ body {
 .what-we-do .nav-link:active {
   background-color: #e20e0d;
 }
-.nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link.active {
-  color: #ffffff !important;
-  background-color: #e20e0d !important;
-  border-bottom: 4px solid #282c47 !important;
+.event-banner {
+  background-image: url(../images/20-conference.jpg), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-size: cover;
+  background-repeat: no repeat;
+  padding: 85px 0px;
+  background-blend-mode: overlay;
+}
+.event-banner h2,
+.event-banner h3,
+.event-banner p {
+  font-weight: bold;
+}
+.event-banner .breadcrumb li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.event-pictures {
+  background-color: #282c47;
 }

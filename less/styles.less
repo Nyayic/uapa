@@ -144,7 +144,7 @@ body{
             text-transform: uppercase;
             color: @tertiary-color;
         }
-        h2{
+        h2,h4,h5{
             font-weight: bold;
         }
     }
@@ -269,8 +269,10 @@ body{
 
 // What we do page
 .what-we-do{
+    background-color: @grey-color;
     .nav-tabs {
         border-bottom: 5px solid #dee2e6;
+        display: inline;
     }
     .nav-link{
         color: #000;
@@ -286,8 +288,23 @@ body{
     }
    
 }
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    color: @white-color !important;
-    background-color: @tertiary-color !important;
-    border-bottom: 4px solid @primary-color !important;
+
+// Single conference /event page
+.event-banner{
+    background-image: url(../images/20-conference.jpg),  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-size: cover;
+    background-repeat: no repeat;
+    padding: 85px 0px;
+    background-blend-mode: overlay;
+    h2, h3, p{
+        font-weight: bold;
+    }
+    .breadcrumb li a{
+        color: @white-color;
+        text-decoration: none;
+    }
+   
+}
+.event-pictures{
+    background-color: @primary-color;
 }
