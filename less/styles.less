@@ -1,0 +1,293 @@
+@primary-color: #282c47;
+@secondary-color: #e4e45c;
+@tertiary-color: #e20e0d;
+@white-color: #ffffff;
+@grey-color:#efefef;
+
+@font-face {
+    font-family: 'SharpSans-Book';
+    src: url('SharpSans-Book.eot');
+    src: url('SharpSans-Book.eot?#iefix') format('embedded-opentype'),
+         url('SharpSans-Book.svg#SharpSans-Book') format('svg'),
+         url('SharpSans-Book.ttf') format('truetype'),
+         url('SharpSans-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+body{
+    font-family: 'Sharp Sans', sans-serif !important;
+}
+
+.top-header{
+    background-color: @primary-color;
+    p{
+        color: @white-color;
+    }
+    .icon{
+        color: @secondary-color !important;
+    }
+}
+
+.header{
+    .logo{
+        height: 80px;
+    }
+    .nav-item {
+        padding-left: 25px;
+    }
+    .nav-item a{
+        font-size: 16px;
+        font-weight: bold;
+       
+    }
+    ul{
+        padding-left: 146px;
+    }
+}
+.about-section{
+    padding: 85px 0px;
+    background-color: @grey-color; 
+    h2, p, a{
+        margin: 40px;
+    }
+    h2{
+        font-weight: bold;
+        color: @primary-color;
+    }
+    a{
+        margin-bottom: 80px;
+        // border-radius: 20px;
+        color: @tertiary-color;
+        text-transform: uppercase;
+        font-weight: bold;
+        // width: 25%;    
+    }
+    .image{
+        background-image: url(../images/about_front.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+   
+}
+.program-areas{
+    background-color: @white-color;
+    padding: 85px 0px;
+    h6, h2{
+        text-align: center;
+    }
+    h6{
+        color: @tertiary-color;
+        text-transform: uppercase;
+    }
+    h2{
+        color: @primary-color;
+        font-weight: bold;
+        padding-bottom: 5rem;
+    }
+    img{
+        border-radius: 40px;
+        background-color: @primary-color;
+        position: relative;
+        top: -65px;
+    }
+    .card{
+        border: none !important;
+        background-color: @grey-color;
+        .card-title{
+            font-weight: bold;
+            // font-size: 17px;
+        }
+       
+    }
+    
+}
+
+
+.help-section {
+    background-color: @primary-color;
+    display: flex;
+    div {
+        padding: 25px 0px;
+        width: 50%;
+        text-align: left;
+    }
+    
+    h2{
+        font-weight: bold;
+        padding-top: 1rem;
+    }
+    a{
+        // margin-left: 1rem;
+        // border-radius: 20px;
+        background-color: @secondary-color;
+        color: @primary-color;
+    }
+    .vertical-line{
+        border-right: 4px solid @secondary-color;
+        background-color: @primary-color;
+    }
+    .img{
+        // background: url(../images/help_bg.png) no-repeat;
+        background-size: cover;
+        position: relative;
+        
+    }
+    
+}
+
+
+.events{
+    padding: 85px 0px;
+    .title{
+        h6{
+            text-transform: uppercase;
+            color: @tertiary-color;
+        }
+        h2{
+            font-weight: bold;
+        }
+    }
+    .date{
+        h1{
+            color: #b8b8b8;
+            font-weight: bold;
+            font-size:80px;
+        }
+        h5{
+            font-size: 15px;
+        }
+    }
+    img{
+        border: none !important;
+    }
+    .event-details{
+        h3{
+            font-weight: bold;
+        }
+    }
+    a{
+        background-color: @tertiary-color;
+        color: @white-color;
+        text-transform: uppercase;
+    }
+    hr{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    img{
+        border-radius: 0px solid @white-color !important;
+    }
+    
+}
+
+// news and updates section
+.updates{
+    padding: 85px 0px;
+    background-color: @grey-color;
+    .title{
+        h6{
+            text-transform: uppercase;
+            color: @tertiary-color;
+        }
+        h2{
+            font-weight: bold;
+        }
+    }
+    a{
+        color: @tertiary-color;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    a:hover{
+        color: @primary-color;
+    }
+    button{
+        border-radius: 20px;
+    }
+}
+
+.footer{
+    padding: 45px 0px;
+    background-color: @primary-color;
+    h5{
+        font-weight: bold;
+    }
+    ul li{
+        list-style: none;
+        padding: 4px;
+        margin-left: -35px;
+        
+    }
+    ul li a{
+        text-decoration: none;
+        color: @white-color;
+     
+    }
+    ul li a:hover{
+        color: @tertiary-color;
+    }
+}
+.copyright{
+    background-color: #4e5069;
+    a{
+        color: @secondary-color;
+        text-decoration: none;
+    }
+    a:hover{
+        color: @tertiary-color;
+    }
+    .icon{
+        color: @secondary-color;
+        padding: 2px;
+    }
+}
+
+// 1. BANNER SECTION FOR ALL PAges
+.banner{
+    background-image: url('../images/title-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 85px 0px;
+    .breadcrumb li a{
+        color: @white-color;
+        text-decoration: none;
+    }
+    .breadcrumb-item.active{
+        color: @secondary-color !important;
+    }
+}
+
+
+// about us page
+#about-uapa{
+    h2{
+        font-weight: bold;
+    }
+}
+
+// What we do page
+.what-we-do{
+    .nav-tabs {
+        border-bottom: 5px solid #dee2e6;
+    }
+    .nav-link{
+        color: #000;
+        font-weight: bold;
+    }
+    .nav-link:hover{
+        background-color: @tertiary-color;
+        color: @white-color;
+    }
+    .nav-link:active{
+        background-color: @tertiary-color;
+        
+    }
+   
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: @white-color !important;
+    background-color: @tertiary-color !important;
+    border-bottom: 4px solid @primary-color !important;
+}

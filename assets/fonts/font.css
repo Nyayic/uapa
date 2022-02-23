@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'SharpSans-Book';
+  src: url('SharpSans-Book.eot');
+  src: url('SharpSans-Book.eot?#iefix') format('embedded-opentype'),
+       url('SharpSans-Book.svg#SharpSans-Book') format('svg'),
+       url('SharpSans-Book.ttf') format('truetype'),
+       url('SharpSans-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+

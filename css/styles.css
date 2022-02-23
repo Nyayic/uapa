@@ -1,0 +1,239 @@
+@font-face {
+  font-family: 'SharpSans-Book';
+  src: url('SharpSans-Book.eot');
+  src: url('SharpSans-Book.eot?#iefix') format('embedded-opentype'), url('SharpSans-Book.svg#SharpSans-Book') format('svg'), url('SharpSans-Book.ttf') format('truetype'), url('SharpSans-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'Sharp Sans', sans-serif !important;
+}
+.top-header {
+  background-color: #282c47;
+}
+.top-header p {
+  color: #ffffff;
+}
+.top-header .icon {
+  color: #e4e45c !important;
+}
+.header .logo {
+  height: 80px;
+}
+.header .nav-item {
+  padding-left: 25px;
+}
+.header .nav-item a {
+  font-size: 16px;
+  font-weight: bold;
+}
+.header ul {
+  padding-left: 146px;
+}
+.about-section {
+  padding: 85px 0px;
+  background-color: #efefef;
+}
+.about-section h2,
+.about-section p,
+.about-section a {
+  margin: 40px;
+}
+.about-section h2 {
+  font-weight: bold;
+  color: #282c47;
+}
+.about-section a {
+  margin-bottom: 80px;
+  color: #e20e0d;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.about-section .image {
+  background-image: url(../images/about_front.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.program-areas {
+  background-color: #ffffff;
+  padding: 85px 0px;
+}
+.program-areas h6,
+.program-areas h2 {
+  text-align: center;
+}
+.program-areas h6 {
+  color: #e20e0d;
+  text-transform: uppercase;
+}
+.program-areas h2 {
+  color: #282c47;
+  font-weight: bold;
+  padding-bottom: 5rem;
+}
+.program-areas img {
+  border-radius: 40px;
+  background-color: #282c47;
+  position: relative;
+  top: -65px;
+}
+.program-areas .card {
+  border: none !important;
+  background-color: #efefef;
+}
+.program-areas .card .card-title {
+  font-weight: bold;
+}
+.help-section {
+  background-color: #282c47;
+  display: flex;
+}
+.help-section div {
+  padding: 25px 0px;
+  width: 50%;
+  text-align: left;
+}
+.help-section h2 {
+  font-weight: bold;
+  padding-top: 1rem;
+}
+.help-section a {
+  background-color: #e4e45c;
+  color: #282c47;
+}
+.help-section .vertical-line {
+  border-right: 4px solid #e4e45c;
+  background-color: #282c47;
+}
+.help-section .img {
+  background-size: cover;
+  position: relative;
+}
+.events {
+  padding: 85px 0px;
+}
+.events .title h6 {
+  text-transform: uppercase;
+  color: #e20e0d;
+}
+.events .title h2 {
+  font-weight: bold;
+}
+.events .date h1 {
+  color: #b8b8b8;
+  font-weight: bold;
+  font-size: 80px;
+}
+.events .date h5 {
+  font-size: 15px;
+}
+.events img {
+  border: none !important;
+}
+.events .event-details h3 {
+  font-weight: bold;
+}
+.events a {
+  background-color: #e20e0d;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.events hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.events img {
+  border-radius: 0px solid #ffffff !important;
+}
+.updates {
+  padding: 85px 0px;
+  background-color: #efefef;
+}
+.updates .title h6 {
+  text-transform: uppercase;
+  color: #e20e0d;
+}
+.updates .title h2 {
+  font-weight: bold;
+}
+.updates a {
+  color: #e20e0d;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.updates a:hover {
+  color: #282c47;
+}
+.updates button {
+  border-radius: 20px;
+}
+.footer {
+  padding: 45px 0px;
+  background-color: #282c47;
+}
+.footer h5 {
+  font-weight: bold;
+}
+.footer ul li {
+  list-style: none;
+  padding: 4px;
+  margin-left: -35px;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer ul li a:hover {
+  color: #e20e0d;
+}
+.copyright {
+  background-color: #4e5069;
+}
+.copyright a {
+  color: #e4e45c;
+  text-decoration: none;
+}
+.copyright a:hover {
+  color: #e20e0d;
+}
+.copyright .icon {
+  color: #e4e45c;
+  padding: 2px;
+}
+.banner {
+  background-image: url('../images/title-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 85px 0px;
+}
+.banner .breadcrumb li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.banner .breadcrumb-item.active {
+  color: #e4e45c !important;
+}
+#about-uapa h2 {
+  font-weight: bold;
+}
+.what-we-do .nav-tabs {
+  border-bottom: 5px solid #dee2e6;
+}
+.what-we-do .nav-link {
+  color: #000;
+  font-weight: bold;
+}
+.what-we-do .nav-link:hover {
+  background-color: #e20e0d;
+  color: #ffffff;
+}
+.what-we-do .nav-link:active {
+  background-color: #e20e0d;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #ffffff !important;
+  background-color: #e20e0d !important;
+  border-bottom: 4px solid #282c47 !important;
+}
