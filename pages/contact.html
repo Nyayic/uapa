@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/fontawesome/css/all.css">
 </head>
-<body>
+<body class="contact">
 
     <!-- Top Header starts -->
     <section class="top-header">
@@ -20,7 +20,7 @@
                     <p>Follow Us: 
                         <span>
                             <i class="icon fab fa-facebook-f"></i>
-                            <i class=" icon fab fa-twitter"></i>
+                            <i class="icon fab fa-twitter"></i>
                         </span>
                     </p>
                 </div>
@@ -57,28 +57,28 @@
                     <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-dark" href="about.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-dark" href="../pages/about.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     About UAPA
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item " href="organization-structure.html">Organization Structure</a></li>
+                        <li><a class="dropdown-item " href="../pages/organization-structure.html">Organization Structure</a></li>
                     </ul>
                 </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="what-we-do.html">What We Do</a>
+                        <a class="nav-link text-dark" href="../pages/what-we-do.html">What We Do</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="membership.html">Membership </a>
+                        <a class="nav-link text-dark" href="../pages/membership.html">Membership </a>
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="conference.html">UAPC20</a>
+                        <a class="nav-link text-dark" href="../pages/conference.html">UAPC20</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="publications.html">Publications</a>
+                        <a class="nav-link text-dark" href="../pages/publications.html">Publications</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="contact.html">Contact</a>
+                        <a class="nav-link text-dark" href="../pages/contact.html">Contact</a>
                     </li>
  
                 </ul>
@@ -104,50 +104,105 @@
         </div>
     </section>
 
+    <div class="container py-5">
+        <div class="row m-4">
+            <div class="col-md-8">
+                <h2>Send A Message</h2>
+                <form action="">
+                    <div class="row m-4">
+                        <div class="col-sm-6">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="name">Email</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="name">Phone Number</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="name">Subject</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-8 m-4">
+                        <label for="message">Message</label>
+                        <textarea name="message" class="form-control" id="" cols="60" rows="10"></textarea>
+                    </div>
+                    <input type="button" class="btn btn-primary" value="Submit">
+
+                </form>
+            </div>
+            <div class="col-md-4 bg-light p-4">
+                <h2>Address Information</h2>
+                <p>Feel free to drop a line, a quick call or even visit us at our offices.</p>
+                
+                <h6><i class="fa-solid fa-location"></i>Address</h6>
+                <p>Hope and Beyond Alcohol & Drug Rehabilitation Center Pokino Rd and Ssekabaka Rd Junction Wakaliga</p>
+                
+                <h6><i class="fa-solid fa-envelop"></i>Email</h6>
+                <p>info@ugandaalcoholpolicyalliance.com</p>   
+                
+                <h6><i class="fab fa-envelop"></i>Phone</h6>
+                <p>+256 785 720 795</p>
+                <p>+256 750 447 778 (WhatsApp)</p> 
+                
+                <h6><i class="fa-solid fa-location"></i>Web</h6>
+                <p>www.ugandaalcoholpolicyalliance.org</p>   
+
+                <h6>Socials</h6>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>            
+            </div>
+        </div>
+    </div>
+
     <footer class="footer">
         <div class="container">
-            <div class="row text-white">
+            <div class="row m-4 text-white">
                 <div class="col-sm-4">
-                    <h2 class="mb-4">This Site</h2>
+                    <h5 class="mb-4">This Site</h5>
                     <ul>
-                        <li><a href="./about.html">About UAPA</a></li>
-                        <li><a href="what-we-do.html">What we do</a></li>
-                        <li><a href="membership.html">Membership</a></li>
-                        <li><a href="conference.html">UAPC20</a></li>
-                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="./pages/about.html">About UAPA</a></li>
+                        <li><a href="./pages/what-we-do.html">What we do</a></li>
+                        <li><a href="./pages/membership.html">Membership</a></li>
+                        <li><a href="./pages/conference.html">UAPC20</a></li>
+                        <li><a href="./pages/publications.html">Publications</a></li>
 
                     </ul>
                 </div>
                 <div class="col-sm-4">
-                    <h2 class="mb-4">Address</h2>
-                    <h5>Hope and Beyond Alcohol & Drug
+                    <h5 class="mb-4">Address</h5>
+                    <p class="">Hope and Beyond Alcohol & Drug
                         Rehabilitation Center <br>
                         Pokino Rd and Ssekabaka Rd Junction <br>
                         Wakaliga
-                    </h5>
+                    </p>
                 </div>
                 <div class="col-sm-4">
-                    <h2 class="mb-4">Contact Us</h2>
-                    <h5><u>Email:</u></h5>
+                    <h5 class="mb-4">Contact Us</h5>
+                    <p><u>Email:</u></p>
                     <p>ugandaalcoholpolicyalliance@gmail.com
                     info@ugandaalcoholpolicyalliance.org</p>
 
-                    <h5><u>Phone:</u></h5>
-                    <p>TEL: +256 785 720 795 /750 447 878 <br>
-                    TEL: +256 785 720 795 /750 447 878</p>
+                    <p><u>Phone:</u></p>
+                    <p>TEL: +256 785 720 795 / 750 447 878 <br>
+                    TEL: +256 785 720 795 / 750 447 878</p>
                 </div>
             </div>
         </div>
     </footer>
     <section class="copyright">
         <div class="container">
-            <div class="row text-white">
-                <div class="col-lg-10">
+            <div class="row px-4 text-white">
+                <div class="col-lg-10  mt-2">
                     <p>Copyright © 2022 Uganda Alcohol Policy Alliance | Supported by IOGT.NTO.MOVEMENT | 
                         Designed by <a href="https://www.biztalkweb.com/"> BizTalk</a> 
                     </p>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-2 mb-2 mt-2">
                     Folow Us:
                     <i class="icon fab fa-facebook"></i>
                     <i class="icon fab fa-twitter"></i>

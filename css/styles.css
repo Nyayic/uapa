@@ -216,7 +216,12 @@ body {
 .banner .breadcrumb-item.active {
   color: #e4e45c !important;
 }
-#about-uapa h2 {
+.about h2,
+.membership h2,
+.contact h2,
+.about h6,
+.membership h6,
+.contact h6 {
   font-weight: bold;
 }
 .what-we-do {
@@ -255,4 +260,26 @@ body {
 }
 .event-pictures {
   background-color: #282c47;
+}
+.event-pictures h2 {
+  font-weight: bold;
+}
+.event-documents h2,
+.publications h2 {
+  font-weight: bold;
+}
+.event-documents h6,
+.publications h6 {
+  font-weight: bold;
+}
+.event-documents .card,
+.publications .card {
+  border: none !important;
+}
+.event-documents a,
+.publications a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  font-size: 12px;
 }

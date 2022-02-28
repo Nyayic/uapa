@@ -261,8 +261,8 @@ body{
 
 
 // about us page
-#about-uapa{
-    h2{
+.about, .membership, .contact{
+    h2, h6{
         font-weight: bold;
     }
 }
@@ -307,4 +307,24 @@ body{
 }
 .event-pictures{
     background-color: @primary-color;
+    h2{
+        font-weight: bold;
+    }
+}
+.event-documents, .publications{
+    h2{
+        font-weight: bold;
+    }
+    h6{
+        font-weight: bold;
+    }
+    .card{
+        border: none !important;
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+        padding: 10px;
+        font-size: 12px;
+    }
 }
