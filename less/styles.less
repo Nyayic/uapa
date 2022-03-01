@@ -17,7 +17,20 @@
   
 body{
     font-family: 'Sharp Sans', sans-serif !important;
+    p{
+        font-size: 14px !important;
+    }
 }
+
+
+@media (max-width:800px) {                  
+    .top-header {
+       display: none;
+    }
+    .breadcrumb{
+        justify-content: center;
+    }
+ }
 
 .top-header{
     background-color: @primary-color;
@@ -209,6 +222,7 @@ body{
 }
 
 .footer{
+    font-size: inherit;
     padding: 45px 0px;
     background-color: @primary-color;
     h5{
@@ -260,12 +274,28 @@ body{
 }
 
 
-// about us page
-.about, .membership, .contact{
+// pages
+.about, .membership, .contact, .single-article{
     h2, h6{
         font-weight: bold;
+        color: @primary-color;
     }
 }
+.about{
+    .btn{
+        color: @tertiary-color;
+        border-color: @tertiary-color;
+        border-radius: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+
+    }
+    .btn:hover{
+        color: lighten(@tertiary-color, 10%);
+    }
+}
+
+
 
 // What we do page
 .what-we-do{
@@ -282,26 +312,34 @@ body{
         background-color: @tertiary-color;
         color: @white-color;
     }
-    .nav-link:active{
+    .nav-link.active{
         background-color: @tertiary-color;
-        
+ 
+    }
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        color: #fff;
+        background-color: @tertiary-color;
+        // border-color: #dee2e6 #dee2e6 #fff;
     }
    
 }
 
 // Single conference /event page
 .event-banner{
-    background-image: url(../images/20-conference.jpg),  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-image: url(../images/20-conference.jpg),  linear-gradient(rgba(0,0,0.6),rgba(0,0,0,0.5));
     background-size: cover;
     background-repeat: no repeat;
     padding: 85px 0px;
     background-blend-mode: overlay;
-    h2, h3, p{
+    h5, h3, h2, p{
         font-weight: bold;
     }
     .breadcrumb li a{
         color: @white-color;
         text-decoration: none;
+    }
+    .breadcrumb-item.active{
+        color: @secondary-color !important;
     }
    
 }
@@ -309,6 +347,13 @@ body{
     background-color: @primary-color;
     h2{
         font-weight: bold;
+    }
+    img{
+        transition: transform .3s;
+    }
+    img:hover{
+        transform: scale(1.5);
+        opacity: 1;
     }
 }
 .event-documents, .publications{
@@ -320,6 +365,8 @@ body{
     }
     .card{
         border: none !important;
+        background-color: @grey-color;
+        height: 100%;
     }
     a{
         text-decoration: none;
@@ -327,4 +374,73 @@ body{
         padding: 10px;
         font-size: 12px;
     }
+}
+
+// Contacts
+.contact{
+   
+    input, optgroup, select, textarea {
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        border: none !important;
+        border-radius: 0%;
+        border-bottom: 1px solid grey !important;
+        
+    }
+    label, .btn{
+        text-transform: uppercase;
+    }
+    .btn{
+        background-color: @primary-color;
+        color: @white-color;
+        border-radius: 0%;
+    }
+    .btn:hover{
+        background-color: lighten(@primary-color, 10%);
+        color: @white-color;
+    }
+    .address{
+        background-color: @grey-color;
+    }
+}
+
+// Publications
+.publications{
+    input, select, .btn{
+        font-size: inherit;
+    }
+    .btn{
+        background-color: @primary-color;
+        color: @white-color;
+        border-radius: 0%;
+    }
+    .btn:hover{
+        background-color: lighten(@primary-color, 10%);
+        color: @white-color;
+    }
+    label{
+        font-weight: bold;
+        color: @primary-color;
+    }
+    .card{
+        background-color: @grey-color;
+    }
+}
+
+// Single Article
+.single-article{
+    .item{
+        background-color: @white-color;
+        width: 70%;
+        position: relative;
+        top: -175px;
+        left: 15%;
+    }
+    .breadcrumb li a{
+        color: @primary-color;
+        text-decoration: none;
+    }
+    
 }
