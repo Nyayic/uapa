@@ -11,12 +11,22 @@ body {
 body p {
   font-size: 14px !important;
 }
+body .page-title {
+  font-weight: bold;
+}
 @media (max-width: 800px) {
   .top-header {
     display: none;
   }
   .breadcrumb {
     justify-content: center;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .carousel-item img {
+    height: 300px !important;
+    height: 302px !important;
+    object-fit: cover;
   }
 }
 .top-header {
@@ -35,11 +45,35 @@ body p {
   padding-left: 25px;
 }
 .header .nav-item a {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
 }
-.header ul {
+.header .nav-item a:hover {
+  border-bottom: 3px solid #e20e0d;
+  text-decoration: none;
+}
+.header .navbar-nav {
   padding-left: 146px;
+}
+.header .dropdown-menu {
+  min-width: 100%;
+  /* Set width of the dropdown */
+  border: none !important;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+}
+.header ul li:hover ul.dropdown-menu {
+  display: block;
+  /* Display the dropdown */
+}
+.header ul li ul.dropdown-menu li a {
+  display: block;
+}
+.header .dropdown-item {
+  text-align: center;
+  background-color: transparent !important;
 }
 .about-section {
   padding: 85px 0px;
@@ -97,28 +131,28 @@ body p {
 }
 .help-section {
   background-color: #282c47;
-  display: flex;
-}
-.help-section div {
-  padding: 25px 0px;
-  width: 50%;
-  text-align: left;
 }
 .help-section h2 {
   font-weight: bold;
-  padding-top: 1rem;
 }
 .help-section a {
+  border-radius: 20px;
   background-color: #e4e45c;
   color: #282c47;
+}
+.help-section a:hover {
+  background-color: #f2f2b4;
 }
 .help-section .vertical-line {
   border-right: 4px solid #e4e45c;
   background-color: #282c47;
 }
 .help-section .img {
+  background: url(../images/help_bg.png) no-repeat;
   background-size: cover;
   position: relative;
+  border-left: 4px solid #e4e45c;
+  background-color: #282c47;
 }
 .events {
   padding: 85px 0px;
@@ -197,6 +231,7 @@ body p {
 .footer ul li a {
   text-decoration: none;
   color: #ffffff;
+  font-size: 13px;
 }
 .footer ul li a:hover {
   color: #e20e0d;
@@ -213,7 +248,6 @@ body p {
 }
 .copyright .icon {
   color: #e4e45c;
-  padding: 2px;
 }
 .banner {
   background-image: url('../images/title-bg.png');
@@ -238,6 +272,9 @@ body p {
 .single-article h6 {
   font-weight: bold;
   color: #282c47;
+}
+.members {
+  background-color: #efefef;
 }
 .about .btn {
   color: #e20e0d;
@@ -273,8 +310,9 @@ body p {
   background-color: #e20e0d;
 }
 .event-banner {
-  background-image: url(../images/20-conference.jpg), linear-gradient(rgba(0, 0, 0.6), rgba(0, 0, 0, 0.5));
+  background-image: url(../images/20-conference.jpg), linear-gradient(rgba(0, 0, 0.5), rgba(0, 0, 0, 0.6));
   background-size: cover;
+  object-fit: cover;
   background-repeat: no repeat;
   padding: 85px 0px;
   background-blend-mode: overlay;
@@ -324,7 +362,7 @@ body p {
   text-decoration: none;
   color: #000;
   padding: 10px;
-  font-size: 12px;
+  font-size: 11px;
 }
 .contact input,
 .contact optgroup,

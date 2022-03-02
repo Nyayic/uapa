@@ -20,6 +20,9 @@ body{
     p{
         font-size: 14px !important;
     }
+    .page-title{
+        font-weight: bold;
+    }
 }
 
 
@@ -30,7 +33,15 @@ body{
     .breadcrumb{
         justify-content: center;
     }
+    
  }
+ @media only screen and (max-width : 800px) { 
+    .carousel-item img{ 
+        height: 300px !important; 
+        height: 302px !important;
+        object-fit: cover;
+    } 
+}
 
 .top-header{
     background-color: @primary-color;
@@ -50,12 +61,34 @@ body{
         padding-left: 25px;
     }
     .nav-item a{
-        font-size: 16px;
+        font-size: 15px;
         font-weight: bold;
        
     }
-    ul{
+    .nav-item a:hover{
+        border-bottom: 3px solid @tertiary-color;
+        text-decoration: none;
+    }
+    .navbar-nav{
         padding-left: 146px;
+    }
+    .dropdown-menu{
+        min-width: 100%; /* Set width of the dropdown */
+        border: none !important;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+    ul li:hover ul.dropdown-menu{
+        display: block;	/* Display the dropdown */
+    }
+    ul li ul.dropdown-menu li a{
+        display: block;
+    }
+    .dropdown-item{
+        text-align: center;
+        background-color: transparent !important;
     }
 }
 .about-section{
@@ -119,33 +152,39 @@ body{
 
 .help-section {
     background-color: @primary-color;
-    display: flex;
-    div {
-        padding: 25px 0px;
-        width: 50%;
-        text-align: left;
-    }
+    // display: flex;
+    // div {
+    //     padding: 25px 0px;
+    //     width: 50%;
+    //     text-align: left;
+    // }
     
     h2{
         font-weight: bold;
-        padding-top: 1rem;
+        // padding-top: 1rem;
     }
     a{
         // margin-left: 1rem;
-        // border-radius: 20px;
+        border-radius: 20px;
         background-color: @secondary-color;
         color: @primary-color;
+    }
+    a:hover{
+        background-color: lighten(@secondary-color, 20%);
     }
     .vertical-line{
         border-right: 4px solid @secondary-color;
         background-color: @primary-color;
     }
     .img{
-        // background: url(../images/help_bg.png) no-repeat;
+        background: url(../images/help_bg.png) no-repeat;
         background-size: cover;
         position: relative;
+        border-left: 4px solid @secondary-color;
+        background-color: @primary-color;
         
     }
+    
     
 }
 
@@ -237,6 +276,7 @@ body{
     ul li a{
         text-decoration: none;
         color: @white-color;
+        font-size: 13px;
      
     }
     ul li a:hover{
@@ -254,7 +294,7 @@ body{
     }
     .icon{
         color: @secondary-color;
-        padding: 2px;
+        // padding: 2px;
     }
 }
 
@@ -280,6 +320,10 @@ body{
         font-weight: bold;
         color: @primary-color;
     }
+}
+
+.members{
+    background-color: @grey-color;
 }
 .about{
     .btn{
@@ -326,8 +370,9 @@ body{
 
 // Single conference /event page
 .event-banner{
-    background-image: url(../images/20-conference.jpg),  linear-gradient(rgba(0,0,0.6),rgba(0,0,0,0.5));
+    background-image: url(../images/20-conference.jpg),  linear-gradient(rgba(0,0,0.5),rgba(0,0,0,0.6));
     background-size: cover;
+    object-fit: cover;
     background-repeat: no repeat;
     padding: 85px 0px;
     background-blend-mode: overlay;
@@ -372,7 +417,8 @@ body{
         text-decoration: none;
         color: #000;
         padding: 10px;
-        font-size: 12px;
+        // padding-left: 30px;
+        font-size: 11px;
     }
 }
 
