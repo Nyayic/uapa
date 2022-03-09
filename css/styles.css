@@ -77,8 +77,6 @@ body .btn-all:hover {
   }
   .event-pictures img {
     height: 100px;
-    display: flex;
-    flex-direction: row;
   }
   .help-section {
     top: -35px;
@@ -462,6 +460,7 @@ body .btn-all:hover {
   color: #000;
   padding: 10px;
   font-size: 11px;
+  margin-left: 12px;
 }
 .contact input,
 .contact optgroup,
