@@ -42,6 +42,17 @@ body{
     }
 }
 
+@media (max-width:575) {
+    .event-pictures{
+        .img-fluid{
+            max-width: 48% !important;
+            display: flex !important;
+            flex-wrap: wrap !important;
+            flex-direction: row !important;
+        }
+    }
+}
+
 @media (max-width:1124px) {                
     .top-header {
         .social, .phone{
@@ -70,6 +81,9 @@ body{
             margin: 1rem;
             .details{
                 padding: 20px 10px !important;
+                h2{
+                    padding: 0px !important;
+                }
             }
         }
     }
@@ -79,13 +93,23 @@ body{
             padding-bottom: 1rem !important;
         }
     }
-    .events,.about-section, .updates, 
+    .events,.about-section, .updates, .publications
     .program-areas, .footer, .membership, 
-    .event-pictures h2, .event-documents h2, .message, .help-section {
+    .event-pictures, .event-documents, .message, .help-section {
         padding: 20px 0px !important;
-    }
-    .event-pictures img{
-        height: 100px;
+    
+    // .events, .event-pictures, .event-documents{
+    //     // padding: 60px 0px;
+    //     padding-top: 3rem;
+    //     padding-bottom: 3rem;
+        // h2{
+        //     padding: 20px !important;
+        // }
+    //    img{
+    //     display: flex !important;
+    //     flex-direction: row;
+    //     height: 100px;
+    //    }
     }
     .help-section {
         top: -35px;
@@ -193,7 +217,7 @@ body{
         background-repeat: no-repeat;
     }
 }
-.program-areas{
+.program-areas, .view-content{
     background-color: @white-color;
     padding: 85px 0px;
     h6, h2{
@@ -229,6 +253,7 @@ body{
 
 .help-section {
     background-color: @primary-color;
+    // padding: 85px 0px;
     h2{
         font-weight: 700;
     }
@@ -258,7 +283,14 @@ body{
 
 
 .events{
-    // padding: 85px 0px;
+    padding: 35px 0px;
+    .event-pictures, .abstracts, .event-documents{
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+        h2{
+            padding: 20px !important;
+        }
+    }
     .title{
         h6{
             text-transform: uppercase;
@@ -306,9 +338,11 @@ body{
     }
 }
 
+
+
 // news and updates section
 .updates{
-    padding: 85px 0px;
+    padding: 35px 0px;
     background-color: @grey-color;
     .title{
         h6{
@@ -378,9 +412,9 @@ body{
     background-image: url('../images/title-bg.png');
     background-repeat: no-repeat;
     background-size: cover !important;
-    background-attachment: fixed;
+    // background-attachment: fixed;
+    padding: 50px 0px;
 
-    padding: 85px 0px;
     .breadcrumb li a{
         color: @white-color;
         text-decoration: none;
@@ -391,7 +425,9 @@ body{
 }
 
 // pages
-.about, .membership, .contact, .single-article, .organization-structure{
+.about, .membership, .single-article{
+    padding-bottom: 3rem;
+    padding-top: 3rem;
     h2, h6{
         font-weight: 700;
         color: @primary-color;
@@ -416,6 +452,8 @@ body{
         color: lighten(@tertiary-color, 10%);
     }
 }
+
+
 
 // What we do page
 .what-we-do{
@@ -449,7 +487,7 @@ body{
     background-size: cover;
     object-fit: cover;
     background-repeat: no repeat;
-    padding: 85px 0px;
+    padding: 50px 0px;
     background-blend-mode: overlay;
     h5, h3, h2, p{
         font-weight: 700;
@@ -464,6 +502,8 @@ body{
 }
 .event-pictures{
     background-color: @primary-color;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
     h2{
         font-weight: 700;
     }
@@ -476,13 +516,12 @@ body{
     }
 }
 .event-documents, .publications{
-    
-    h2{
-        font-weight: 700;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    h2, h6{
+        font-weight: 700 !important;
     }
-    h6{
-        font-weight: 700;
-    }
+   
     .card{
         border: none !important;
         background-color: @grey-color;
@@ -494,6 +533,15 @@ body{
         padding: 10px;
         font-size: 11px;
        margin-left: 12px;
+    }
+}
+
+.organization-structure{
+    h2, h6{
+        font-weight: 700;
+    }
+    span{
+      color: @tertiary-color;
     }
 }
 
@@ -539,6 +587,7 @@ body{
         background-color: lighten(@primary-color, 10%);
         color: @white-color;
     }
+   
     label{
         font-weight: 700;
         color: @primary-color;

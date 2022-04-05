@@ -31,6 +31,14 @@ body .btn-all:hover {
   color: #ffffff !important;
   background-color: #e20e0d !important;
 }
+@media (max-width: 575) {
+  .event-pictures .img-fluid {
+    max-width: 48% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+  }
+}
 @media (max-width: 1124px) {
   .top-header .social,
   .top-header .phone {
@@ -57,6 +65,9 @@ body .btn-all:hover {
   .about-section .content .details {
     padding: 20px 10px !important;
   }
+  .about-section .content .details h2 {
+    padding: 0px !important;
+  }
   .program-areas {
     background-color: #ffffff;
   }
@@ -66,17 +77,14 @@ body .btn-all:hover {
   .events,
   .about-section,
   .updates,
-  .program-areas,
+  .publications .program-areas,
   .footer,
   .membership,
-  .event-pictures h2,
-  .event-documents h2,
+  .event-pictures,
+  .event-documents,
   .message,
   .help-section {
     padding: 20px 0px !important;
-  }
-  .event-pictures img {
-    height: 100px;
   }
   .help-section {
     top: -35px;
@@ -174,24 +182,30 @@ body .btn-all:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.program-areas {
+.program-areas,
+.view-content {
   background-color: #ffffff;
   padding: 85px 0px;
 }
 .program-areas h6,
-.program-areas h2 {
+.view-content h6,
+.program-areas h2,
+.view-content h2 {
   text-align: center;
 }
-.program-areas h6 {
+.program-areas h6,
+.view-content h6 {
   color: #e20e0d;
   text-transform: uppercase;
 }
-.program-areas h2 {
+.program-areas h2,
+.view-content h2 {
   color: #282c47;
   font-weight: 700;
   padding-bottom: 2rem;
 }
-.program-areas img {
+.program-areas img,
+.view-content img {
   border-radius: 50px;
   background-color: #282c47;
   position: relative;
@@ -199,11 +213,13 @@ body .btn-all:hover {
   height: 100px;
   padding: 20px;
 }
-.program-areas .card {
+.program-areas .card,
+.view-content .card {
   border: none !important;
   background-color: #efefef;
 }
-.program-areas .card .card-title {
+.program-areas .card .card-title,
+.view-content .card .card-title {
   font-weight: 600;
 }
 .help-section {
@@ -233,6 +249,20 @@ body .btn-all:hover {
   border-left: 4px solid #e4e45c;
   background-color: #282c47;
   left: 116px;
+}
+.events {
+  padding: 35px 0px;
+}
+.events .event-pictures,
+.events .abstracts,
+.events .event-documents {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+.events .event-pictures h2,
+.events .abstracts h2,
+.events .event-documents h2 {
+  padding: 20px !important;
 }
 .events .title h6 {
   text-transform: uppercase;
@@ -276,7 +306,7 @@ body .btn-all:hover {
   border-radius: 0px solid #ffffff !important;
 }
 .updates {
-  padding: 85px 0px;
+  padding: 35px 0px;
   background-color: #efefef;
 }
 .updates .title h6 {
@@ -340,8 +370,7 @@ body .btn-all:hover {
   background-image: url('../images/title-bg.png');
   background-repeat: no-repeat;
   background-size: cover !important;
-  background-attachment: fixed;
-  padding: 85px 0px;
+  padding: 50px 0px;
 }
 .banner .breadcrumb li a {
   color: #ffffff;
@@ -350,24 +379,24 @@ body .btn-all:hover {
 .banner .breadcrumb-item.active {
   color: #e4e45c !important;
 }
+.about,
+.membership,
+.single-article {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
 .about h2,
 .membership h2,
-.contact h2,
 .single-article h2,
-.organization-structure h2,
 .about h6,
 .membership h6,
-.contact h6,
-.single-article h6,
-.organization-structure h6 {
+.single-article h6 {
   font-weight: 700;
   color: #282c47;
 }
 .about span,
 .membership span,
-.contact span,
-.single-article span,
-.organization-structure span {
+.single-article span {
   color: #e20e0d;
 }
 .members {
@@ -411,7 +440,7 @@ body .btn-all:hover {
   background-size: cover;
   object-fit: cover;
   background-repeat: no repeat;
-  padding: 85px 0px;
+  padding: 50px 0px;
   background-blend-mode: overlay;
 }
 .event-banner h5,
@@ -429,6 +458,8 @@ body .btn-all:hover {
 }
 .event-pictures {
   background-color: #282c47;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 .event-pictures h2 {
   font-weight: 700;
@@ -440,13 +471,16 @@ body .btn-all:hover {
   transform: scale(1.5);
   opacity: 1;
 }
-.event-documents h2,
-.publications h2 {
-  font-weight: 700;
+.event-documents,
+.publications {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
+.event-documents h2,
+.publications h2,
 .event-documents h6,
 .publications h6 {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 .event-documents .card,
 .publications .card {
@@ -461,6 +495,13 @@ body .btn-all:hover {
   padding: 10px;
   font-size: 11px;
   margin-left: 12px;
+}
+.organization-structure h2,
+.organization-structure h6 {
+  font-weight: 700;
+}
+.organization-structure span {
+  color: #e20e0d;
 }
 .contact input,
 .contact optgroup,
