@@ -563,3 +563,24 @@ body .btn-all:hover {
   color: #282c47;
   text-decoration: none;
 }
+.webform-client-form .form-item-submitted-name,
+.webform-client-form .form-item-submitted-email,
+.webform-client-form .form-item-submitted-phone,
+.webform-client-form .form-item-submitted-subject {
+  width: 50% !important;
+  flex: 0 0 auto;
+}
+.webform-client-form .form-item-submitted-email,
+.webform-client-form .form-item-submitted-subject {
+  float: right;
+  top: 69 auto;
+  position: relative;
+  margin-top: -60.5px;
+  padding-left: 5px;
+}
+.webform-client-form .form-submit {
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}

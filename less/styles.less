@@ -132,7 +132,8 @@ body{
         top: -175px;
         left: 5%;
     }
-    
+
+   
 }
 
 
@@ -609,5 +610,29 @@ body{
     .breadcrumb li a{
         color: @primary-color;
         text-decoration: none;
+    }
+}
+
+// Webform
+.webform-client-form{
+    .form-item-submitted-name, 
+    .form-item-submitted-email, 
+    .form-item-submitted-phone,
+    .form-item-submitted-subject{
+        width: 50% !important;
+        flex: 0 0 auto;
+    }
+    .form-item-submitted-email, .form-item-submitted-subject{
+        float: right;
+        top: 69 auto;
+        position: relative;
+        margin-top: -60.5px;
+        padding-left: 5px;
+    }
+    .form-submit{
+        padding-right: 3rem !important;
+        padding-left: 3rem !important;
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
     }
 }
