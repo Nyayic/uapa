@@ -402,6 +402,14 @@ body .btn-all:hover {
 .members {
   background-color: #efefef;
 }
+.members p a {
+  text-decoration: none !important;
+  cursor: pointer;
+  color: #282c47;
+}
+.members p a :hover {
+  color: #e20e0d;
+}
 .about .btn {
   color: #e20e0d;
   border-color: #e20e0d;
